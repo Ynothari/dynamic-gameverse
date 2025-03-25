@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Gamepad2, Chess, Dices, Snake, XCircle } from "lucide-react";
+import { Gamepad2, ChessBoard, DiceIcon, ArrowBigUp, XCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 const games = [
@@ -8,7 +8,7 @@ const games = [
     id: "chess",
     title: "Chess",
     description: "The classic strategic board game of kings and queens.",
-    icon: Chess,
+    icon: ChessBoard,
     path: "/games/chess",
     color: "from-blue-500/20 to-blue-600/10",
   },
@@ -16,7 +16,7 @@ const games = [
     id: "ludo",
     title: "Ludo",
     description: "Race your pieces around the board in this game of chance.",
-    icon: Dices,
+    icon: DiceIcon,
     path: "/games/ludo",
     color: "from-yellow-500/20 to-yellow-600/10",
   },
@@ -24,7 +24,7 @@ const games = [
     id: "snake-ladder",
     title: "Snake & Ladder",
     description: "Climb the ladders and avoid the snakes in this race to the top.",
-    icon: Snake,
+    icon: ArrowBigUp,
     path: "/games/snake-ladder",
     color: "from-green-500/20 to-green-600/10",
   },
