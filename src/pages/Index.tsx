@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Gamepad2, ChessKnight as ChessIcon, Dice1, ArrowBigUp, XCircle } from "lucide-react";
+import { Gamepad2, Swords, Dice1, ArrowBigUp, XCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 const games = [
@@ -8,7 +8,7 @@ const games = [
     id: "chess",
     title: "Chess",
     description: "The classic strategic board game of kings and queens.",
-    icon: ChessIcon,
+    icon: Swords,
     path: "/games/chess",
     color: "from-blue-500/20 to-blue-600/10",
   },
