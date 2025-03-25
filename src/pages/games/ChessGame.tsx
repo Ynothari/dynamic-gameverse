@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { toast } from "sonner";
 import { Check, RotateCcw, History } from "lucide-react";

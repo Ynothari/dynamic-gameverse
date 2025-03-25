@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { toast } from "sonner";
@@ -13,6 +12,7 @@ interface Piece {
   position: number;
   status: PieceStatus;
   distanceMoved: number;
+  color: PlayerColor;
 }
 
 interface Player {
@@ -57,7 +57,8 @@ const LudoGame = () => {
           id: i,
           position: -1,
           status: "home",
-          distanceMoved: 0
+          distanceMoved: 0,
+          color: "red"
         })),
         isActive: true,
         isComputer: false
@@ -68,7 +69,8 @@ const LudoGame = () => {
           id: i,
           position: -1,
           status: "home",
-          distanceMoved: 0
+          distanceMoved: 0,
+          color: "green"
         })),
         isActive: true,
         isComputer: true
@@ -79,7 +81,8 @@ const LudoGame = () => {
           id: i,
           position: -1,
           status: "home",
-          distanceMoved: 0
+          distanceMoved: 0,
+          color: "yellow"
         })),
         isActive: true,
         isComputer: true
@@ -90,7 +93,8 @@ const LudoGame = () => {
           id: i,
           position: -1,
           status: "home",
-          distanceMoved: 0
+          distanceMoved: 0,
+          color: "blue"
         })),
         isActive: true,
         isComputer: true
